@@ -16,7 +16,7 @@ const Sidebar = () => {
       <div className="md:hidden">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="text-white text-2xl fixed top-10 left-7 z-30"
+          className="text-white text-2xl fixed top-5 left-7 z-30"
         >
           {sidebarOpen ? <FaTimes /> : <FaUserCircle />}
         </button>
