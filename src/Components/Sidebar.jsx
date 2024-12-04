@@ -12,11 +12,11 @@ const Sidebar = () => {
         <SidebarContent isMobile={false} />
       </aside>
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Sidebar
       <div className="md:hidden">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="text-white text-2xl fixed top-5 left-7 z-30"
+          className="text-white text-2xl fixed top-5 left-7 z-10"
         >
           {sidebarOpen ? <FaTimes /> : <FaUserCircle />}
         </button>
@@ -25,7 +25,34 @@ const Sidebar = () => {
             <SidebarContent isMobile={true} />
           </div>
         )}
+      </div> */}
+
+      {/* Mobile Sidebar */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className={`fixed top-5 left-7 z-30 text-white p-0 rounded-full shadow-lg transform transition-all duration-300 ${
+            sidebarOpen
+              ? "bg-gradient-to-r  hover:scale-110"
+              : "bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-110"
+          }`}
+          aria-label="Toggle Sidebar"
+        >
+          {sidebarOpen ? (
+            <FaTimes className="text-white text-2xl" />
+          ) : (
+            <FaUserCircle className="text-white text-2xl animate-bounce" />
+          )}
+        </button>
+
+        {sidebarOpen && (
+          <div className="fixed top-0 left-0 w-3/4 h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 p-6 z-20 shadow-xl">
+            <SidebarContent isMobile={true} />
+          </div>
+        )}
       </div>
+
+
     </>
   );
 };

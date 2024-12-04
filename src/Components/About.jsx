@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -27,13 +28,18 @@ const About = () => {
             <p className="text-lg sm:text-xl leading-relaxed text-gray-300">
               I am a <span className="text-blue-400 font-semibold">Computer Science Engineering student</span> at MITCORER, passionate about using technology to build impactful solutions. With a relentless curiosity and a drive for innovation, I specialize in <span className="text-blue-400 font-semibold">web development</span>, exploring the possibilities of <span className="text-blue-400 font-semibold">Machine Learning</span> and <span className="text-blue-400 font-semibold">Data Analytics</span>.
             </p>
-            <motion.a
-              href="/portfolio"
-              className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:from-blue-400 hover:to-purple-500 transform hover:scale-105 transition duration-300"
+            
+            <motion.div
+              className="inline-block"
               whileHover={{ scale: 1.1 }}
             >
-              Explore My Work
-            </motion.a>
+              <Link
+                to="/portfolio"  // Use `to` prop for navigation in React Router
+                className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:from-blue-400 hover:to-purple-500 transform hover:scale-105 transition duration-300"
+              >
+                Explore My Work
+              </Link>
+            </motion.div>
           </div>
         </div>
       </motion.div>

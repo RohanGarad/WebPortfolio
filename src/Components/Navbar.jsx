@@ -10,8 +10,8 @@ const Navbar = () => {
     <nav className="navbar z-1 top-0 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 text-white shadow-lg">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-blue-400 tracking-wider ml-12">
-          PORTFOLIO
+        <h1 className="text-2xl font-bold text-blue-400 tracking-wider ml-12 uppercase">
+          portfolio
         </h1>
 
         {/* Desktop Navigation */}
