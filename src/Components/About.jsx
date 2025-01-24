@@ -73,7 +73,7 @@ const About = () => {
               {/* Call to Action */}
               <div className="flex space-x-4">
                 <motion.a
-                  href="/portfolio"
+                  href="https://rohangarad.netlify.app/portfolio"
                   className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:from-blue-400 hover:to-purple-500 transform hover:scale-105 transition duration-300"
                   whileHover={{ scale: 1.1 }}
                 >
