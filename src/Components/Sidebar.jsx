@@ -85,8 +85,9 @@ const SidebarContent = ({ isMobile }) => (
         <p className="text-gray-400">rohangarad8@gmail.com</p>
       </div>
       <div>
-        <h4 className="text-lg font-semibold text-gray-300">Birthday</h4>
-        <p className="text-gray-400">Jan 27, 2004</p>
+        <h4 className="text-lg font-semibold text-gray-300">Graduation Year
+        </h4>
+        <p className="text-gray-400">2025</p>
       </div>
       <div>
         <h4 className="text-lg font-semibold text-gray-300">Location</h4>

@@ -4,6 +4,36 @@ import { motion } from "framer-motion";
 const Portfolio = () => {
   const projects = [
     {
+      title: "Real-Time Cricket Score Dashboard",
+      description: (
+        <>
+          <h1 className="font-semibold mb-1">Deployed Links:</h1>
+          <p>Admin View
+            <a
+              href="https://rohan-garad-full-stack-frontend.onrender.com/admin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-500 transition duration-300"
+            >
+              : Visit Admin Page
+            </a>
+          </p>
+          <p>User View 
+            <a
+              href="https://rohan-garad-full-stack-frontend.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-500 transition duration-300"
+            >
+              : Visit Live User Page
+            </a>
+          </p>
+        </>
+      ),
+      image: "/image.png", // Replace with your project image URL
+      link: "https://github.com/RohanGarad/Rohan_Garad-Full_Stack_Backend",
+    },
+    {
       title: "VacationVilla: Rental Web Application",
       description:
         "Created a responsive user interface for browsing, viewing details, and booking vacation rentals seamlessly.",
@@ -73,9 +103,9 @@ const Portfolio = () => {
               <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-300 mb-4">
+              <div className="text-sm sm:text-base text-gray-300 mb-4">
                 {project.description}
-              </p>
+              </div>
               <a
                 href={project.link}
                 target="_blank"
